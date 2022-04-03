@@ -11,11 +11,12 @@ const createTuit = (req, res) => {
     newTuit.like = false;
     newTuit.verified = false;
     newTuit.handle = "robbybobface";
-    newTuit.time = "1 min";
+    newTuit.time = "now";
     newTuit.stats = {
         "comments": "0",
         "retuits": "0",
-        "likes": "0"
+        "likes": "0",
+        "dislikes": "0"
     };
     newTuit.logoImage = "https://pbs.twimg.com/profile_images/1502305122663157763/qbK0Ghl4_400x400.jpg";
     tuits.unshift(newTuit);
